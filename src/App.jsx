@@ -5,13 +5,14 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 import HomePageLayout from "./Layout/HomePageLayout";
+import UserInfo from "./components/UserInfo";
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePageLayout />}>
         <Route index element={<Home />} />
-        <Route path="user" element={<Home />} />
+        <Route path="user" element={<UserInfo />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
       </Route>
