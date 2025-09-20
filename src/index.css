@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+body{
+  box-sizing:border-box;
+  overflow:none;
+}
+
+nav a.active {
+  font-size : 13px ;
+  color:green;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+
