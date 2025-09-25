@@ -2,11 +2,8 @@ import React from 'react';
 import Logo from '/imgs/logo1.jpg'
 import { students } from '../Data';
 
-
-
 const UserInfo = () => {
-
-
+  
   return (
     <div className='text-center py-5 '>
        
@@ -21,6 +18,14 @@ const UserInfo = () => {
         {
           students.map((item, indx) => (
             <div
+
+              indx={indx}
+              className='flex flex-col justify-center items-center border p-2 bg-blue-200 rounded-2xl'>
+              <img src={item.image} alt="" className='w-40 h-40 rounded-full border-2 border-white' />
+              <div className='mt-2'>
+                <h2 className='font-bold text-xl'>{item.name}</h2>
+                <p className='mb-0'><span className='text-sm font-semibold mb-0'>Coures :- {item.course} </span></p>
+                <p className='mb-0'><span className='text-sm font-semibold'>Club :- {item.course} </span></p>
               key={indx}
               className='flex flex-col justify-center items-center border p-2 bg-blue-200 rounded-2xl'>
               <img src={item.image} alt={item.name} className='w-40 h-40 rounded-full border-2 border-white' />
