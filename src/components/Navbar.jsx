@@ -17,10 +17,6 @@ const Navbar = () => {
     { path: "/about", label: "About us" },
   ];
 
-  const handleMenu = () => {
-    navigate(menubar.path);
-    setShowMenu(!showMenu);
-  }
 
   return (
     <>
