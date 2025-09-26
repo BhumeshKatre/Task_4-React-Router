@@ -14,7 +14,7 @@ const UserInfo = () => {
       <div className="grid md:grid-cols-4 gap-3">
         {students.map((item, indx) => (
           <div
-            indx={indx}
+            key={indx}
             className="flex flex-col justify-center items-center border p-2 bg-blue-200 rounded-2xl"
           >
             <img

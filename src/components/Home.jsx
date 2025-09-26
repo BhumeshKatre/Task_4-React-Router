@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
+import HeroImg from '/imgs/hero1.png'
 const Home = () => {
   return (
     <div className='flex md:gap-3 h-[79vh] md:w-[90vw] mx-auto md:items-center px-6 md:justify-between flex-col md:flex-row bg-blue-300   rounded-2xl'>
@@ -12,7 +13,7 @@ const Home = () => {
           <button className='lowercase bg-white py-2 px-4 hover:bg-gray-300 mt-1'> VIEW COURESE →</button></div>
       </div>
       <div className=' md:flex-1 h-[30vh]  flex items-center justify-center md:order-2 order-1'>
-        <img src="/public\imgs\hero1.png" alt="" />
+        <img src={HeroImg} alt="" />
       </div>
     </div>
   );
