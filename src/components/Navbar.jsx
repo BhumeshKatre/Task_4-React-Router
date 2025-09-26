@@ -35,7 +35,7 @@ const Navbar = () => {
 
         <GiHamburgerMenu
           onClick={handleHamburderMenuBtn}
-          className="md:hidden text-blue-50 text-3xl font-bold "
+          className="md:hidden text-blue-50 text-3xl font-bold border p-1 "
         />
       </header>
 
