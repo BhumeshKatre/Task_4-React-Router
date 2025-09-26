@@ -36,7 +36,7 @@ const About = () => {
         </div>
       </div>
       <div className=" md:flex-1 h-[30vh]  flex items-center justify-center md:order-2 order-1">
-        <img src="/public\imgs\hero1.png" alt="" />
+        <img src={AboutImg} alt="" />
       </div>
     </div>
   );
